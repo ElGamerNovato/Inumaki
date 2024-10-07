@@ -25,8 +25,8 @@ while True:
     if results.multi_face_landmarks:
         for face_landmarks in results.multi_face_landmarks:
             # Get the coordinates for the lips using specific landmark indices for upper and lower lips
-            upper_lip_indices = [61, 62, 63, 64, 65, 66, 67]
-            lower_lip_indices = [78, 191, 80, 81, 82, 13, 312]
+            upper_lip_indices = [61, 62, 63, 64, 65, 66, 37]
+            lower_lip_indices = [10, 11, 12, 13, 14, 15, 16]
 
             # Extract the upper and lower lip landmarks
             upper_lip_landmarks = [face_landmarks.landmark[i] for i in upper_lip_indices]
